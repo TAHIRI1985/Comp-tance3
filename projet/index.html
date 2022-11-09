@@ -297,6 +297,7 @@
       
        <div class=" divfieldset container-fluid">
           <div id="app"  class="row justify-content-center  ">
+            
             <fieldset v-for="product in products" class=" acol-ms-12 col-md-5 col-lg-3 " >
              <article class="f1 ">
               <a href="#"><img id="photo1" :src="`${product.image} `" alt="bijoux" height="">  </a>
@@ -323,81 +324,7 @@
             <h5> Total Prix:{{totalPrix}} €</h5>
          </div>
         </div> 
-        <script>
-          const { createApp } = Vue
-        
-          createApp({
-            data() {
-              return {
-                
-                products: [ ]
-                
-              }
-            },
-            computed: {
-          totalProducts() {
-            return this.products.reduce((sum, product) => {
-              // sum += product.quantity
-              // return sum
-              return sum + product.quantity;
-            }, 0);
-            
-          },
-          totalPrix() {
-            return this.products.reduce((total, product) => {
-            
-              return total + product.count*product.prix;
-            }, 0);
-            
-          },
-        
-        
-
-        },
-
-            created() {
-            fetch('products.json')
-            .then(response => response.json())
-            .then(json => {
-                this.products = json.products
-                //this.products = json
-            });
-        },
-         
-
-
-          }).mount('#app');
-          createApp({
-            data() {
-              return {
-                
-                products:[]
-                
-              }
-            
-            },
-            computed:{
-              totalPrix(){
-                return this.products.reduce((total,product) =>{
-                    return totl+product.count*product.prix;
-                },0);
-
-              }
-            },
-         
-            created() {
-            fetch('products.json')
-            .then(response => response.json())
-            .then(json => {
-                this.products = json.products
-                
-            });
-        },
-         
-
-
-          }).mount('#add');
-         </script>
+    
         
 
         <div class=" container">
@@ -484,6 +411,7 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="js/main.js">
+   
+    <script src="js/main.js"></script>
   </body>
 </html>
