@@ -18,3 +18,9 @@
     } */
   }
 }
+@media screen and(max-width:500px) {
+  #photo2 {
+    margin-top: 10px;
+    padding: 0px;
+  }
+}

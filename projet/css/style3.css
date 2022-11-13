@@ -4,122 +4,34 @@ fieldset {
   margin: 50px 50px;
   border-radius: 10px;
   box-shadow: 0px 0px 40px gray;
-
-  /* transition: all 0.5s ease; */
 }
 button {
   border: 0px;
   background-color: #fff;
 }
-/* //////////////////f1////////////////////// */
-
-#photo1 {
-  /* visibility: hidden; */
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  padding-top: 7px;
-
-  /* transition: all .5s ease; */
-}
-.f1 {
-  background-size: 100% 100%;
-  /* background-image: url(./images/braslete1-removebg-preview.png); */
-  /* object-fit: cover; */
-}
-.f1:hover #photo1 {
-  visibility: visible;
-}
 
 #photo2 {
-  visibility: hidden;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  padding-top: 7px;
+  z-index: 2;
+  margin-top: -330px;
 
-  /* object-fit: cover; */
-  /* transition: all .5s ease; */
-}
-.f2 {
-  background-size: 100% 100%;
-  background-image: url(./images/b.oreille2.png);
-  /* object-fit: cover; */
-}
-.f2:hover #photo2 {
-  visibility: visible;
-}
-
-#photo3 {
-  visibility: hidden;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  padding-top: 7px;
-  /* object-fit: cover; */
-  /* transition: all .5s ease; */
-}
-.f3 {
-  background-size: 100% 100%;
-  background-image: url(./images/b-removebg-preview.png);
-  /* object-fit: cover; */
-}
-.f3:hover #photo3 {
-  visibility: visible;
-}
-
-/* ////////////////////////////////////////////f4////////////////////////////////// */
-
-#photo4 {
-  visibility: hidden;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  padding-top: 7px;
-  /* object-fit: cover; */
-  /* transition: all .5s ease; */
-}
-.f4 {
-  background-size: 100% 100%;
-  background-image: url(./images/Montere1-removebg-preview.png);
-  object-fit: cover;
-}
-.f4:hover #photo4 {
-  visibility: visible;
-}
-
-/* ///////////////////////////f5/////////////////////// */
-
-#photo5 {
-  visibility: hidden;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  padding-top: 7px;
-  /* object-fit: cover; */
-  /* transition: all .5s ease; */
-}
-.f5 {
-  background-size: 100% 100%;
-  background-image: url(./images/b.cheville2.png);
-  /* object-fit: cover; */
-}
-.f5:hover #photo5 {
-  visibility: visible;
-}
-
-#photo6 {
-  visibility: hidden;
-  cursor: pointer;
   height: 100%;
   width: 100%;
   padding-top: 7px;
 }
-.f6 {
-  background-size: 100% 100%;
-  background-image: url(./images/collier2.png);
+#photo1 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
 }
-.f6:hover #photo6 {
+
+.f1 {
+  background-size: 100% 100%;
+}
+#photo2 {
+  visibility: hidden;
+}
+
+.f1:hover #photo2 {
   visibility: visible;
 }
 #voirplus {
@@ -201,6 +113,5 @@ footer {
   height: 20px;
   border-radius: 100%;
   position: absolute; /* changed */
-  /* top: -5px; /* changed */
-  /* left: 18px; changed*/
-} 
+/* top: -5px; /* changed */
+/* left: 18px; changed*/
